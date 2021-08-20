@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Traslados</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="./css/signin.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form id="frmLogin" name="frm-Login" method="POST">
+        <img
+          class="mb-4"
+          src="./img/catovatechCasalocaliza.svg"
+          alt=""
+          width="92"
+          height="auto"
+        />
+        <h1 class="h3 mb-3 fw-normal">Ingrese sus credenciales</h1>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="usarname"
+            name="usarname"
+            placeholder="Ingrese el usuario"
+          />
+          <label for="floatingInput">Usuario</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            name="pass"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button
+          class="w-100 btn btn-lg btn-primary"
+          type="submit"
+          id="btnLogin"
+          name="btnLogin"
+        >
+          Login
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy;CatovaTech 2017–2021</p>
+      </form>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
