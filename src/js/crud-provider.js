@@ -1,11 +1,4 @@
-const urlCRUD = 'http://localhost:3003/api/auth';
-
-const logIn = (usr, pass) => {
-  console.log({
-    usuario: usr,
-    password: pass,
-  });
-};
+const urlCRUD = "http://localhost:3003/api/auth";
 
 const getUsuario = async (usuario) => {
   const resp = await fetch(`${urlCRUD}/${usuario}`);
@@ -15,10 +8,10 @@ const getUsuario = async (usuario) => {
 
 const crearUsuario = async (usuario) => {
   const resp = await fetch(`${urlCRUD}/signup`, {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify(usuario),
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
 
@@ -31,10 +24,10 @@ const crearUsuario = async (usuario) => {
 
 const actualizarUsuario = async (id, usuario) => {
   const resp = await fetch(`${urlCRUD}/${id}`, {
-    method: 'PUT',
+    method: "PUT",
     body: JSON.stringify(usuario),
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   });
 
@@ -43,10 +36,10 @@ const actualizarUsuario = async (id, usuario) => {
 
 const borrarUsuario = async (id) => {
   const resp = await fetch(`${urlCRUD}/${id}`, {
-    method: 'DELETE',
+    method: "DELETE",
   });
 
-  return resp.ok ? 'Borrado' : 'No se pudo eliminar';
+  return resp.ok ? "Borrado" : "No se pudo eliminar";
 };
 
-export { getUsuario, crearUsuario, actualizarUsuario, borrarUsuario, logIn };
+export { getUsuario, crearUsuario, actualizarUsuario, borrarUsuario };
