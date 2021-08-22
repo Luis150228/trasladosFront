@@ -8,9 +8,9 @@ const logIn = async (usr) => {
       "Content-Type": "application/json",
     },
   });
-  //   console.log(await resp.json());
+  // console.log(await resp.json());
 
-  //   return await resp.json();
+  // return await resp.json();
 
   const { menssage, token } = await resp.json();
   sessionStorage.setItem("usrtoken", `${token}`);

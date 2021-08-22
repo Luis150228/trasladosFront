@@ -1,8 +1,10 @@
+import { init } from "./js/listaTraslados.js";
 import * as API from "./js/login-provider.js";
 // import "./assets/css/signin.css";
 
 const frmLogin = document.querySelector("#frmLogin");
 const btnSubmit = document.querySelector("#btnLogin");
+init();
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
